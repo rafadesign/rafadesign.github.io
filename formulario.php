@@ -20,6 +20,8 @@
 		$mensagemHTML .= '<p><b>E-mail:</b> '.$remetente.'</p>'.$quebra_linha;
 		$mensagemHTML .= '<p><b>Telefone (Skype):</b> '.$remetente.'</p>'.$quebra_linha;
 		$mensagemHTML .= '<p><b>Mensagem:</b> '.$mensagem.'</p>'.$quebra_linha;
+	        $mensagemHTML .= '<p><b>Submit:</b> '.$submit.'</p>'.$quebra_linha;
+
 
 		$headers			= 'MIME-Version: 1.1'.$quebra_linha;
 		$headers			.= 'Content-Type: text/html; charset=utf-8'.$quebra_linha;
