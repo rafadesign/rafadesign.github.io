@@ -106,7 +106,7 @@
             //                                                   PATTERN
             // ---------------------------------------------------------
             if ($this.attr("pattern") !== undefined) {
-              message = "Não está no formato esperado<!-- data-validation-pattern-message to override -->";
+              message = "Not in the expected format<!-- data-validation-pattern-message to override -->";
               if ($this.data("validationPatternMessage")) {
                 message = $this.data("validationPatternMessage");
               }
@@ -118,7 +118,7 @@
             // ---------------------------------------------------------
             if ($this.attr("max") !== undefined || $this.attr("aria-valuemax") !== undefined) {
               var max = ($this.attr("max") !== undefined ? $this.attr("max") : $this.attr("aria-valuemax"));
-              message = "Muito Grande: máximo de '" + max + "'<!-- data-validation-max-message to override -->";
+              message = "Too high: Maximum of '" + max + "'<!-- data-validation-max-message to override -->";
               if ($this.data("validationMaxMessage")) {
                 message = $this.data("validationMaxMessage");
               }
@@ -130,7 +130,7 @@
             // ---------------------------------------------------------
             if ($this.attr("min") !== undefined || $this.attr("aria-valuemin") !== undefined) {
               var min = ($this.attr("min") !== undefined ? $this.attr("min") : $this.attr("aria-valuemin"));
-              message = "Muito Curto: Minimo '" + min + "'<!-- data-validation-min-message to override -->";
+              message = "Too low: Minimum of '" + min + "'<!-- data-validation-min-message to override -->";
               if ($this.data("validationMinMessage")) {
                 message = $this.data("validationMinMessage");
               }
@@ -141,7 +141,7 @@
             //                                                 MAXLENGTH
             // ---------------------------------------------------------
             if ($this.attr("maxlength") !== undefined) {
-              message = "Muito Longo: Máximo'" + $this.attr("maxlength") + "' characters<!-- data-validation-maxlength-message to override -->";
+              message = "Too long: Maximum of '" + $this.attr("maxlength") + "' characters<!-- data-validation-maxlength-message to override -->";
               if ($this.data("validationMaxlengthMessage")) {
                 message = $this.data("validationMaxlengthMessage");
               }
@@ -152,7 +152,7 @@
             //                                                 MINLENGTH
             // ---------------------------------------------------------
             if ($this.attr("minlength") !== undefined) {
-              message = "muito curto'" + $this.attr("minlength") + "' characters<!-- data-validation-minlength-message to override -->";
+              message = "Too short: Minimum of '" + $this.attr("minlength") + "' characters<!-- data-validation-minlength-message to override -->";
               if ($this.data("validationMinlengthMessage")) {
                 message = $this.data("validationMinlengthMessage");
               }
@@ -183,7 +183,7 @@
             //                                                     EMAIL
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
-              message = "email inválido<!-- data-validator-validemail-message to override -->";
+              message = "Not a valid email address<!-- data-validator-validemail-message to override -->";
               if ($this.data("validationValidemailMessage")) {
                 message = $this.data("validationValidemailMessage");
               } else if ($this.data("validationEmailMessage")) {
